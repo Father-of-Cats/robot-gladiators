@@ -1,0 +1,1 @@
+window.alert("This is an alert! THAT JS BE WORKING SON")
