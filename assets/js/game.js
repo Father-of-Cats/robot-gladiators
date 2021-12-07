@@ -5,21 +5,13 @@ var playerMoney = 10;
 // you can log mutliple values at onces like this
 // console.log(playerName, playerHealth, playerAttack)
 // var enemyName = "Hans"
+// Enemy Robots
+var enemyNames = ["Bob", "Glorious Amy", "Sweet Jimmy"];
 var enemyHealth = 50;
 var enemyAttack = 12;
 
-// Enemy Robots
-var enemyNames = ["Bob", "Glorious Amy", "Sweet Jimmy", "Beautiful Hans"];
-console.log(enemyNames[0]);
-console.log(enemyNames[1]);
-console.log(enemyNames[2]);
-// console.log(enemyNames[3]);
-// var enemy1 = "Boborto";
-// var enemy2 = "Alfonso";
-// var enemy3 = "Sweet Bill";
-
 //Fight or skip prompt
-var fight = function() {
+var fight = function(enemyName) {
     // Alert players that they are starting the round
     window.alert("READY FOR THE POSE OFF?");
     //Fight or Skip prompt
@@ -72,8 +64,6 @@ else if (promptFight === "skip" || promptFight === "SKIP") {
   }
   };
 
-// fight()
-
 // Game States
 // Win - Player has defeated all enemy-robots
 //  *Fight all enemy-robots
@@ -81,5 +71,5 @@ else if (promptFight === "skip" || promptFight === "SKIP") {
 // "Lose" - Player robot's health is zero or less
 
 for(var i = 0; i < enemyNames.length; i++) {
-  console.log(enemyNames[i]);
+  fight(enemyNames[i]);
 }
